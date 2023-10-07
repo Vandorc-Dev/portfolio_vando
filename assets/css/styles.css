@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: 'Segoe UI';
 }
 
 :root {
@@ -46,40 +46,40 @@ header nav ul{
     display: flex;
     list-style: none;
     width: 50%;
-    justify-content: space-around;
+    justify-content: center;
 }
 
 header nav ul li{
-    padding: 0 .5em;
+    padding: 0 .6em;
+    transition: .13s;
 }
-
 
 header nav ul li a{
-    text-decoration: none;
-    color: var(--color-inverted);
     font-size: 1.2em;
+
 }
 
+header nav ul li:hover{
+    transform: scale(1.1);
+}
 
-header a button{
-    padding: 5px 26px;
-    font-size: 1.2em;
-    font-weight: 500;
-    outline: none;
-    border: none;
-    border-radius: 8px;
-    background: #6d59a88f;
-    color: var(--color-inverted);
-    margin-right: 1em;
-    box-shadow: 0px 0px 5px .1px;
+header button{
+    position: relative;
+    right: 1.5em;
+    box-shadow: 0px 0px 100px 5px;
 }
 
 
 .logo{
     display: flex;
     margin-left: 2em;
-    min-width: 300px;
+    min-width: 260px;
     align-items: center;
+    transition: .13s;
+}
+
+.logo:hover{
+    transform: scale(1.1);
 }
 
 .logo img {
@@ -93,4 +93,76 @@ header a button{
     color: var(--color-inverted);
     margin-left: .2em;
     font-size: 1.8em;
+}
+
+
+.btn:hover{
+    transform: scale(1.13);
+}
+
+/*banner topo*/
+#banner-topo{
+    width: 100vw;
+    height: 89vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg, var(--color-secondary), var(--cor-principal), var(--cor-secundaria), black);
+    background-size: 300% 300%;
+    animation: colors 5s ease infinite;
+}
+
+a{
+    text-decoration: none;
+    color: var(--color-inverted);
+}
+
+#banner-topo h2{
+    color: var(--color-inverted);
+    font-size: 2.8em;
+    padding: 0 1.2em;
+    text-align: center;
+    text-shadow: #3211eb81 1.3px 1.3px 1.3px;
+}
+
+#banner-topo p{
+    color: var(--color-inverted);
+    font-size: 1.8em;
+    text-shadow: #3211eb81 1.1px 1.1px 1.1px;
+    padding: 0 1.2em ;
+    text-align: center;
+}
+
+#banner-topo .botoes{
+    display: flex;
+    padding: 0 1.2em;
+    margin-top: 2.5em;
+}
+ .btn{
+    padding: .2em 1.4em;
+    margin: auto .5em;
+    font-size: 17px;
+    font-weight: 500;
+    border-radius: 12px;
+    border: none;
+    background-color: var(--color-code-4);
+    color: var(--color-inverted);
+    transition: .15s;
+}
+
+#banner-topo .botoes .btn .bi{
+    margin-right: 6px;
+}
+
+@keyframes colors{
+    0%{
+        background-position: 0% 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0% 50%;
+    }
 }
