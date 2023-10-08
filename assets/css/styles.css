@@ -66,7 +66,6 @@ header nav ul li:hover{
 header button{
     position: relative;
     right: 1.5em;
-    box-shadow: 0px 0px 100px 5px;
 }
 
 
@@ -82,12 +81,6 @@ header button{
     transform: scale(1.1);
 }
 
-.logo img {
-    width: 3.5em; 
-    height: 3.5em;
-    border-radius: 50%;
-    border: solid 1px var(--color-code-3);
-}
 
 .logo h1{
     color: var(--color-inverted);
@@ -118,20 +111,33 @@ a{
     color: var(--color-inverted);
 }
 
+
+#banner-topo img{
+    width: 12em; 
+    height: 12em;
+    border-radius: 50%;
+    border: solid 1px var(--cor-roxo-destaque);
+    box-shadow: 0px 0px 30px 1px var(--color-code-3);
+    margin-bottom: 3em;
+}
+
 #banner-topo h2{
     color: var(--color-inverted);
-    font-size: 2.8em;
+    font-size: 3em;
     padding: 0 1.2em;
     text-align: center;
     text-shadow: #3211eb81 1.3px 1.3px 1.3px;
+    font-weight: 400;
+    margin-bottom: 20px;
 }
 
 #banner-topo p{
     color: var(--color-inverted);
-    font-size: 1.8em;
+    font-size: 1.6em;
     text-shadow: #3211eb81 1.1px 1.1px 1.1px;
     padding: 0 1.2em ;
     text-align: center;
+    font-weight: 300;
 }
 
 #banner-topo .botoes{
@@ -140,14 +146,14 @@ a{
     margin-top: 2.5em;
 }
  .btn{
-    padding: .2em 1.4em;
+    padding: .6em 2.2em;
     margin: auto .5em;
     font-size: 17px;
     font-weight: 500;
-    border-radius: 12px;
-    border: none;
-    background-color: var(--color-code-4);
-    color: var(--color-inverted);
+    border-radius: 6px;
+    border: solid 1px var(--color-code-3);
+    color: var(--color-code-3);
+    background-color: var(--cor-principal);
     transition: .15s;
 }
 
@@ -166,3 +172,36 @@ a{
         background-position: 0% 50%;
     }
 }
+
+.curriculo{
+    background-color: #0c0c0ce1;
+}
+
+/*Sobre*/
+
+#about{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor-principal);
+    border-top: #dee7ea2a solid 2px;
+    justify-content: center;
+}
+
+#about .box-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2em;
+    margin-top: 5em;
+    width: 70%;
+    height: 60%;
+    /*background-color: var(--cor-secundaria);*/
+    border-radius: 80px;
+}
+
+#about .box-about h2{
+    color: var(--color-inverted);
+}
+
+
