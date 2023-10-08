@@ -21,6 +21,11 @@
     --color-code-4: #e53e3e;
   }
 /*Estilo Geral*/
+
+html {
+    scroll-behavior: smooth; /* Adiciona a rolagem suave em todo o documento */
+}
+
 body{
     display: flex;
     flex-direction: column;
@@ -28,7 +33,8 @@ body{
 }
 
 header{
-    height: 11vh;
+    position: fixed;
+    height: 10vh;
     background-color: var(--cor-principal);
     width: 100%;
     box-shadow: 0px 0px 6px .05px;
@@ -96,14 +102,14 @@ header button{
 /*banner topo*/
 #banner-topo{
     width: 100vw;
-    height: 89vh;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background: linear-gradient(45deg, var(--color-secondary), var(--cor-principal), var(--cor-secundaria), black);
     background-size: 300% 300%;
-    animation: colors 5s ease infinite;
+    animation: colors 5s ease infinite; 
 }
 
 a{
@@ -117,9 +123,16 @@ a{
     height: 12em;
     border-radius: 50%;
     border: solid 1px var(--cor-roxo-destaque);
-    box-shadow: 0px 0px 30px 1px var(--color-code-3);
-    margin-bottom: 3em;
+    box-shadow: 0px 0px 12px .5px var(--color-code-3);
+    margin-top: 3em;
+    margin-bottom: 1.5em;
+    transition: .3s;
 }
+
+#banner-topo img:hover{
+    transform: scale(1.1);
+}
+
 
 #banner-topo h2{
     color: var(--color-inverted);
@@ -128,7 +141,6 @@ a{
     text-align: center;
     text-shadow: #3211eb81 1.3px 1.3px 1.3px;
     font-weight: 400;
-    margin-bottom: 20px;
 }
 
 #banner-topo p{
@@ -143,10 +155,10 @@ a{
 #banner-topo .botoes{
     display: flex;
     padding: 0 1.2em;
-    margin-top: 2.5em;
+    margin-top: 3em;
 }
  .btn{
-    padding: .6em 2.2em;
+    padding: .3em 1.6em;
     margin: auto .5em;
     font-size: 17px;
     font-weight: 500;
@@ -186,6 +198,7 @@ a{
     background-color: var(--cor-principal);
     border-top: #dee7ea2a solid 2px;
     justify-content: center;
+    scroll-padding: 20px;
 }
 
 #about .box-about{
@@ -202,6 +215,42 @@ a{
 
 #about .box-about h2{
     color: var(--color-inverted);
+    font-size: 2.2em;
+}
+
+#about .box-about p{
+    color: var(--color-inverted);
+    font-size: 1.3em;
+    margin-top: 26px;
+    padding: 0 3em;
+    font-weight: 300;
 }
 
 
+
+
+
+  /* Estilos para janela modal */
+  .modal {
+    display: none; /* Esconde a janela modal inicialmente */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Cor de fundo semi-transparente */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  #closeModalBtn {
+    margin-top: 20px;
+  }
+  
+  /* Estilos adicionais para a janela modal */

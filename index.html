@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="./assets/css/styles.css">
     <title>Vanderlândio - Currículo</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -14,13 +16,12 @@
                 <h1>Vando Rocha</h1>
             </div>
             <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Sobre</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="#about">Sobre</a></li>
                 <li><a href="#">Habilidades</a></li>
                 <li><a href="#">Projetos</a></li>
-                <li><a href="#">Habilidades</a></li>
             </ul>
-            <button class="btn"><a href="#">Contato</a></button > 
+            <button class="btn"><a href="#">Contato</a></button>
         </nav>
     </header>
     <main>
@@ -29,20 +30,35 @@
             <h2>Olá! Seja bem vindo!</h2>
             <p>Aqui você vai conhecer um pouco de sobre mim, e sobre meu trabalho.</p>
             <div class="botoes">
-                <button class="btn curriculo"><i class="bi bi-file-earmark-person"></i>Currículo</button>
-                <button class="btn"><i class="bi bi-linkedin"></i>Linkedin</button>
-                <button class="btn"><i class="bi bi-github"></i>GitHub</button>
+                <a class="btn curriculo"><i class="bi bi-file-earmark-person"></i>Currículo</a>
+                <a href="https://www.linkedin.com/in/vanderlandio-rocha/" target="_blank" class="btn"><i
+                        class="bi bi-linkedin"></i>Linkedin</a>
+                <a class="btn"><i class="bi bi-github"></i>GitHub</a>
             </div>
         </section>
         <section id="about">
             <div class="box-about">
                 <h2>Sobre mim!</h2>
-                <p>Texto de exemplo</p>
+                <p>Pós-graduado em Administração de Banco de Dados com experiência em modelagem
+                    de dados, ETL, arquitetura de dados e SQL. Experiência em integração entre sistemas criação e
+                    otimização de consultas e objetos utilizando SQL e PL/SQL em banco de dados Oracle. Tenho
+                    conhecimento em plataforma de Business Intelligence e criação de métricas, KPIs e dashboards em
+                    plataformas de BI como Totvs Fast Analytics e Power BI.</p>
             </div>
         </section>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <h2>Site em construção</h2>
+                <p>Desculpe-nos pelo incoveniente. Estamos trabalhando para finalizar o site.</p>
+                <button id="closeModalBtn">Fechar</button>
+            </div>
+        </div>
+
     </main>
     <footer>
 
     </footer>
+    <script src="./assets/js/modal.js"></script>
 </body>
+
 </html>
