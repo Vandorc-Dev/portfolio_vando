@@ -7,5 +7,10 @@ window.onload = function() {
       closeModalBtn.onclick = function() {
         modal.style.display = "none";
       };
-    }, 1600); // Exibe a janela modal após 1 segundo (1000 milissegundos)
+    }, 2000); // Exibe a janela modal após 1 segundo (1000 milissegundos)
   };
+
+
+function abrirPDF() {
+    window.open("./assets/docs/curriculo.pdf", "_blank");
+}
